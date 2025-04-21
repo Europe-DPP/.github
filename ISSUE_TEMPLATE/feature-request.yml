@@ -1,0 +1,26 @@
+name: 🚀 Feature Request
+description: Yeni bir özellik veya task talebi oluştur
+title: "EDD-XXX: "
+labels: [feature]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Lütfen aşağıdaki alanları dikkatli doldurun.
+  - type: textarea
+    id: description
+    attributes:
+      label: Açıklama
+      description: Bu task neyi çözüyor?
+      placeholder: Açıklama giriniz...
+    validations:
+      required: true
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Gereksinimler
+      options:
+        - label: UI tanımlandı
+        - label: API endpoint hazır
+        - label: Kullanıcı akışı net
